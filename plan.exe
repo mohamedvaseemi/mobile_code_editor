@@ -1,0 +1,16 @@
+[ Flutter Mobile App ]
+   │
+   ├── Code & Syntax  ──> re_editor (Local Canvas)
+   ├── Terminal View  ──> xterm.dart
+   ├── Local Git      ──> git2dart (libgit2 via FFI) ──> GitHub / GitLab (HTTPS)
+   │
+   └── Run / Compile Request (HTTPS)
+          │
+          ▼
+   [ Serverless JS (Hono) ]
+          │
+          ├──> [ Redis Cloud (Upstash) ] ── (Rate-limit & Output Cache)
+          ├──> [ MySQL (PlanetScale) ]    ── (User metadata, repos list)
+          │
+          ▼
+   [ Execution Engine (Piston / Judge0) ] ──> Returns stdout / stderr
